@@ -128,20 +128,20 @@ main {
     margin-bottom: 20px;
     font-size: 280%;
 }
-#benifits-physical>h3, #benifits-mental >h3{
-    color: #3a3a3a;
-    padding: 0 20px;
-}
-
-#benifits-physical >p, #benifits-mental >p{
+#benifits-physical> div, #benifits-mental >div{
     line-height: 20px;
     margin-bottom: 20px;
     padding: 0 20px;
 }
 
+
+#benifits h3 {
+    color: #252525;
+}
+
 hr{
     border-bottom: 1px solid #3a3a3a;
-    margin: 5px 0;
+    margin: 6px 0;
 }
 
 #circle-cover-bg{
@@ -213,6 +213,23 @@ hr{
         width: 300px;
         right: 50px;
     }
+    
+    #benifits-physical, #benifits-mental{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #benifits-physical >div, #benifits-mental >div{
+        width: 75%;
+
+    }
+
+    #benifits-mental >div{
+        text-align: end;
+        align-self: flex-end;
+
+    }
 
 }
 
@@ -225,3 +242,30 @@ hr{
     }  
 }
 
+@media screen and (min-width: 1200px) {
+    /*Reason section*/
+    #benifits{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benifits > div{
+        flex: 1;
+    }
+
+    #benifits-img{ 
+        order: 0;
+    }
+
+    #benifits-mental{
+        order: 1;
+    }
+
+    #benifits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benifits-physical > div {
+        align-self: flex-end;
+    }
+}

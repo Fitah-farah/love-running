@@ -21,6 +21,12 @@ body {
     font-family: lato, sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
 
 /* Header */
 header {
@@ -35,12 +41,7 @@ header {
     align-items: baseline;
 }
 
-h1 {
-    font-family: Oswald, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
+
 
 header a {
     text-decoration: none;
@@ -86,18 +87,35 @@ nav{
     font-size: 2rem;
 }
 
-/* hero section */
-#hero {
-    height: 600px;
-    width: 100%;
-    background: url(../images/hero-image.webp) no-repeat center center/cover; 
-}
 /* Main content */
 main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/* hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url(../images/hero-image.webp) no-repeat center center/cover; 
+    position: relative;
+}
+
+#cover-text{
+    background-color: rgb(241, 109, 107, .7); 
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h1,h3 {
+    color: #ffffff;
 }
 
 /* Footer */
@@ -122,6 +140,7 @@ main {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
+        
     }    
 
     #menu{
@@ -148,8 +167,12 @@ main {
         margin-top: 79px;
     }
 
-   
-    
+    /* Hero section text */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+
 }
 
 

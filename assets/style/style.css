@@ -274,12 +274,24 @@ hr{
 }
 
 
+/* Media query for gallery images */
+@media screen and (min-width: 570px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
+
 /* Media query larger screen (laptop and desktop size) */
 @media screen and (min-width: 992px) {
     /* Media query for screens 992px and above */
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
     }  
+    #photos {
+        column-count: 3;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -307,5 +319,9 @@ hr{
 
     #benifits-physical > div {
         align-self: flex-end;
+    }
+
+    #photos {
+        column-count: 4;
     }
 }

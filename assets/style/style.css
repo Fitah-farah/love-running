@@ -395,7 +395,9 @@ hr{
         column-count: 4;
     }
     #signup {
-        height: 600px;
+       background-size: cover;
+       background-position: 75%;
+       flex-grow: 1;
      }
      #signup-form {
          position: absolute;
